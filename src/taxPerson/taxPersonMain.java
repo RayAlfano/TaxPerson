@@ -38,13 +38,15 @@ public class taxPersonMain {
 	 * and cost and returns the final cost after tax.
 	 */
 	public static void main(String[] args) {
-
+		
+		
 		Scanner scan = new Scanner(System.in);
 		double initialPrice = -1.0;
 		String luxuryStatusInput = "";
 		
 		//Get cost input at least once
 		//If the input is an invalid number, ask for new input
+		
 		do {
 			System.out
 					.println("Please input the price of an item as an integer or floating point number with two decimals");
@@ -69,6 +71,8 @@ public class taxPersonMain {
 		System.out.println("Item cost is: "
 				+ itemToPrice.calculateCostAfterTax());
 	}
+
+	
 
 	/**
 	 * 
@@ -108,4 +112,5 @@ public class taxPersonMain {
 		}
 		return false;
 	}
+	
 }
